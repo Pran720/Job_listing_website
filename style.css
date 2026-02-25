@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  /* width: 100%;
+  height: 100%; */
+  background: #f5f7fb;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(120deg, #4f46e5, #06b6d4);
+  color: white;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 1rem;
+  justify-content: center;
+  background: rgb(170, 192, 225);
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.filters button {
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.job-container {
+  /* width: 100%;
+  height: 100%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #36494d;
+}
+
+.job-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(77, 74, 74, 0.612);
+  transition: transform 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h3 {
+  margin-bottom: 5px;
+}
+
+.job-card button {
+  margin-top: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #015868;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination {
+  text-align: center;
+  padding: 1rem;
+  background-color: aquamarine;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 5px;
+  background-color: #514e95;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: rgb(111, 92, 92);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+}
+
+#closeModal {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.footer {
+  background: #111827;
+  color: #fff;
+  padding: 2rem 1rem 1rem;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer h3, .footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #d1d5db;
+}
+
+.footer a {
+  color: #06b6d4;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-helpdesk button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #06b6d4;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-helpdesk button:hover {
+  background: #0891b2;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #374151;
+  font-size: 14px;
+  color: #9ca3af;
+}
+}
+
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+  }
+}

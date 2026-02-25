@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listing Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+  <h1>Job Finder</h1>
+  <p>Find your next opportunity</p>
+</header>
+
+<section class="filters">
+  <input type="text" id="searchInput" placeholder="Search job title..." />
+
+  <select id="locationFilter">
+    <option value="">All Locations</option>
+    <option value="Remote">Remote</option>
+    <option value="Bangalore">Bangalore</option>
+    <option value="Delhi">Delhi</option>
+  </select>
+
+  <select id="categoryFilter">
+    <option value="">All Categories</option>
+    <option value="IT">IT</option>
+    <option value="Design">Design</option>
+    <option value="Marketing">Marketing</option>
+  </select>
+
+  <select id="experienceFilter">
+    <option value="">All Experience</option>
+    <option value="Fresher">Fresher</option>
+    <option value="Mid">Mid</option>
+    <option value="Senior">Senior</option>
+  </select>
+
+  <button id="clearBtn">Clear Filters</button>
+</section>
+
+<main>
+  <div id="jobContainer" class="job-container"></div>
+
+  <div class="pagination">
+    <button id="prevBtn">Prev</button>
+    <span id="pageInfo"></span>
+    <button id="nextBtn">Next</button>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Job Finder</h3>
+      <p>Your trusted platform to find the best career opportunities.</p>
+    </div>
+
+    <div class="footer-helpdesk">
+      <h4>Help Desk</h4>
+      <p>Email: support@jobfinder.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Working Hours: Mon - Fri (9:00 AM - 6:00 PM)</p>
+      <button onclick="alert('Our support team will contact you soon!')">Contact Support</button>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <p><a href="#">About Us</a></p>
+      <p><a href="#">Privacy Policy</a></p>
+      <p><a href="#">Terms & Conditions</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Job Finder. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="jobModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalCompany"></p>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
